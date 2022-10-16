@@ -29,7 +29,7 @@ jobs:
           IFLOW_NAME: 'DEMO'
           PACKAGE_ID: ZWassim
           PACKAGE_NAME: 'Z_Wassim'
-          #WORK_DIR: <working_directory> # Optional
+          WORK_DIR: $GITHUB_WORKSPACE/DEMO # Optional
           #VERSION_HANDLING: <version_no_handling_during_update> # Deprecated
           #SCRIPT_COLLECTION_MAP: <comma_separated_source/target_pairs> # Optional
       #  Deploy runtime
