@@ -19,7 +19,7 @@ jobs:
       # Set environment variables for update_designtime_artifact.sh
       - name: 'set env'
         run: |
-            echo "GIT_SRC_DIR=$GITHUB_WORKSPACE" >> $GITHUB_ENV
+            echo "GIT_SRC_DIR=$GITHUB_WORKSPACE/DEMO/DEMO" >> $GITHUB_ENV
       # Upload/Update design time
       - name: 'Update/Upload Groovy XML Transformation to design time'
         run: /usr/bin/update_designtime_artifact.sh
@@ -29,7 +29,7 @@ jobs:
           IFLOW_NAME: 'DEMO'
           PACKAGE_ID: ZWassim
           PACKAGE_NAME: 'Z_Wassim'
-          WORK_DIR: $GITHUB_WORKSPACE/DEMO # Optional
+          #WORK_DIR: $GITHUB_WORKSPACE/DEMO # Optional
           #VERSION_HANDLING: <version_no_handling_during_update> # Deprecated
           #SCRIPT_COLLECTION_MAP: <comma_separated_source/target_pairs> # Optional
       #  Deploy runtime
