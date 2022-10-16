@@ -32,7 +32,7 @@ jobs:
           #WORK_DIR: <working_directory> # Optional
           #VERSION_HANDLING: <version_no_handling_during_update> # Deprecated
           #SCRIPT_COLLECTION_MAP: <comma_separated_source/target_pairs> # Optional
-      # Deploy runtime
+      #  Deploy runtime
       - name: 'Deploy Groovy XML Transformation to runtime'
         run: /usr/bin/deploy_runtime_artifact.sh
         shell: bash
