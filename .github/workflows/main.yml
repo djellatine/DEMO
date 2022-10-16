@@ -37,5 +37,5 @@ jobs:
         run: /usr/bin/deploy_runtime_artifact.sh
         shell: bash
         env:
-          IFLOW_ID: ZWassim
+          IFLOW_ID: DEMO
           DELAY_LENGTH: 15 # Optional
